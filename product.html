@@ -7,6 +7,8 @@
     <title>Document</title>
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" src="./css/product.css">
+    <link rel="stylesheet" src="./css/style.css">
 
 
 
@@ -20,7 +22,203 @@
 
 </head>
 <body>
+<!--CABECERA-->
+<header>
+    <div class="container-fluid bg-light ">
+      <div class="container d-flex justify-content-end">
+        <div class="row p-2">
+          <div class="col-5"><img alt="Aberturas Marco" src="./images/phone.webp" width="15" height="15">
+            Venta telefonica
+          </div>
+          <div class="col-5">
+            <img alt="Aberturas Marco" src="./images/mensaje.png" width="15" height="15">
+            Centro de ayuda
+          </div>
+          <div class="col-2">
+            Contacto
+          </div>
+        </div>
+      </div>
+    </div>
     
+    
+    <nav class="navbar navbar-expand-lg bg-white  ">
+      <div class="container-fluid m-4">
+        <a class="navbar-brand " href="#"><img alt="Aberturas Marco" src="./images/Logos-03.svg" width="175"
+            height="64"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex mx-auto " role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><img alt="Aberturas Marco" src="./images/perfil.png"
+                  width="20" height="20"> Mi cuenta</a></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img alt="Aberturas Marco" src="./images/cart.png" width="20" height="20"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <div class="container-fluid bg-danger text-light">
+      <div class="container d-flex justify-content-start">
+        <div class="row p-2">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Productos
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <!--FINCABECERA-->    
+
+
+
+    <!-- ================================== -->
+
+
+
+<!--PRODUCTO -->
+
+
+<div class="container p-4 mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="product-galeria">
+        <input type="radio" name="selection" value="imagen1" id="img_1" checked>
+        <input type="radio" name="selection" value="imagen2" id="img_2">
+        <input type="radio" name="selection" value="imagen3" id="img_3">
+        <input type="radio" name="selection" value="imagen4" id="img_4">
+        <img src="./images/Ventana_1.webp">
+        <img src="./images/shop/product-shop/producto2.1.jpg">
+        <img src="./images/shop/product-shop/producto2.3.jpg">
+        <img src="./images/shop/product-shop/producto2.4.jpg">
+      </div>
+
+    </div>
+    <div class="col mt-5">
+      <div class="product-data">
+          <h4> Modena</h4>
+          <h2 class="mb-2 mt-3">Ventana 60x40 Vidrio Entero 4mm</h2>
+          <br>
+          <h3>$32,223.00</h3>
+          <br>
+        </div>
+    
+        <div id="description">
+          <p>
+            Blood 9000 Gamma C/ Carrete Extra - 6+1 rulemanes de acero inoxidable - Sin fin de acero
+            inoxidable para un Devanado excelente y prolijo. - Eje y partes de acero inoxidable - Cuerpo
+            extra liviano de carbono de alta resistencia - Diseño de carrete de casting - Corona de potencia
+            - Balanceado por computadora - Sistema de frenado rapido - Rulemanes: 6+1 - Apto para largos
+            lances. - Peso del reel 530 Grs. - 2 Carretes de aluminio. - Manivela rígida de aluminio. -
+            Sistema Anti-reverse infinito. - Gear Ratio 4.6:1 - Capacidad 515 mts - 0,30 mm
+    
+          </p>
+        </div>
+        <div id="producto-categoria" class="mt-1 mb-0 text-muted small">
+          <span>Reeles</span>
+          <span class="text-primary"> • </span>
+          <span>Reeles Frontales</span>
+          <span class="text-primary"></span>
+        </div>
+    
+        <br />
+        <div class="cart">
+          <div class="product-cantidad">
+            <label for="cantidad">
+              Cantidad:
+              <input class="product-cantidad" type="number" id="cantidad" placeholder="1" min="1" maxlength="2">
+            </label>
+          </div>
+          <div class="producto-add-cart">
+            <a href="./cart.html">
+              <button class="btn-add mt-3"> Añadir
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                  </svg>
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+    
+  
+    <!-- ====================================== -->
+
+<!--FICHA TECNICA -->
+
+<div class="container mt-5 pt-5">
+  <table class="table table-striped">
+    <thead> 
+      <tr> 
+        <th>Características Técnicas</th> 
+        <th>Descripción</th>
+
+      </tr> 
+    </thead>
+    <tbody>
+      <tr> 
+        <td>Marca</td>
+        <td>AM-328</td> 
+
+      </tr>
+      <tr> 
+        <td>Modelo</td>
+        <td>Modena vidrio entero</td> 
+
+      </tr>
+      <tr> 
+        <td>Tipo de ventana</td>
+        <td>Corrediza</td> 
+ 
+      </tr>
+      <tr> 
+        <td>Forma</td>
+        <td>Rectangular</td> 
+      </tr>
+      <tr> 
+        <td>Material del marco</td>
+        <td>Aluminio Blanco</td> 
+      </tr>
+      <tr> 
+        <td>Ancho x altura</td>
+        <td>60 x 40 cm</td> 
+      </tr>
+      <tr> 
+        <td>Espesor</td>
+        <td>4 ml</td> 
+      </tr>
+    </tbody>
+  </table>
+</div> 
 
 
 
@@ -30,10 +228,111 @@
 
 
 
-
-
-
-
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span></span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="bi bi-facebook"></i>
+        <a href="" class="me-4 link-secondary">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <a class="navbar-brand " href="#"><img alt="Aberturas Marco" src="./images/Logos-03.svg" width="175"
+                height="64"></a>
+            </h6>
+            <p>
+              Un mundo de aberturas de aluminio, el mejor lugar de compras para vos y tu hogar.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Atención al cliente:
+            </h6>
+            <p>
+              <a href="#" class="text-reset">0800 122 0338
+                0810 999 3728</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">LU-VI de 09:00 a 18:00
+                SA de 9:00 a 13:00</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">contacto@fravega.com</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Venta telefónica:
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">0810 333 8700</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">LU-VI de 8:00 a 20:00
+                SA-DO-Feriados 9:00 a 21:00</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Comprar en aberturasmarco.com.ar</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Servicio técnico
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              Información legal
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> Botón de arrepentimiento
+              </p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> Protección de Usuarios Financieros</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://aberturasmarco.com.ar">Aberturas Marco</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
 
 
